@@ -1,0 +1,119 @@
+/* General Styling */
+body {
+    background-color: #f7f9f8;
+    font-family: 'Roboto', sans-serif;
+    color: #26332b;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+}
+
+/* Header */
+h1 {
+    color: #26332b;
+}
+
+/* Input Fields */
+#searchInput {
+    border: 2px solid #d8e2dc;
+    border-radius: 8px;
+    padding: 8px;
+    transition: border-color 0.3s ease;
+}
+
+#searchInput:focus {
+    border-color: #739781;
+    outline: none;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #f4acb7;
+    border: none;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #de1d3a;
+}
+
+.btn-secondary {
+    background-color: #9d8189;
+    border: none;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #614b51;
+}
+
+/* Modal Styling */
+.modal-content {
+    border-radius: 10px;
+    background-color: #ffe5d9;
+    border: none;
+}
+
+/* Rich Text and Markdown Editors */
+#editor {
+    border: 1px solid #d8e2dc;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fff;
+    min-height: 200px;
+}
+
+#markdownInput {
+    border: 1px solid #d8e2dc;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+/* Note Card Styling */
+#noteList .note-card {
+    background-color: #fff;
+    border: 1px solid #d8e2dc;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+#noteList .note-card:hover {
+    transform: scale(1.02);
+}
+
+/* Markdown Preview Styling */
+.markdown-preview {
+    border: 1px solid #d8e2dc;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f0f4f1;
+}
+
+/* Footer Modal Buttons */
+.modal-footer .btn-primary {
+    background-color: #ffcad4;
+    color: #fff;
+}
+
+.modal-footer .btn-success {
+    background-color: #a6bdaf;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #noteList {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-dialog {
+        max-width: 90%;
+    }
+}
